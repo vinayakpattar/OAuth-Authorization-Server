@@ -11,7 +11,7 @@
 	<groupId>com.oauth2.server</groupId>
 	<artifactId>OAuth-Authorization-Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OAuth-Authorization-Server</name>
+	<name>OAuth-Authorization-Server1</name>
 	<description>Authorization Server</description>
 	<properties>
 		<java.version>1.8</java.version>
