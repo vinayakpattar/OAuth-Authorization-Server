@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thymeleaf Form handling Demo</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/users}" th:object="${userInfo}">
+    <input id="firstName" placeholder="Enter First Name" required type="text" th:field="*{firstName}"/>
+    <input id="lastName" placeholder="Enter Last Name" required type="text" th:field="*{lastName}"/>
+    <select id="role" required th:field="*{role}">
+        <option value="" hidden>Select a role</option>
+        <option value="GUEST" hidden>GUEST</option>
+        <option value="USER" hidden>USER</option>
+        <option value="ADMIN" hidden>ADMIN</option>
+    </select>
+    <input type="submit" value="Create User">
+</form>
+
+</body>
+</html>
